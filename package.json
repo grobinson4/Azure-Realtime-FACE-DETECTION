@@ -1,0 +1,26 @@
+{
+  "name": "azure-realtime-face-detection",
+  "version": "1.0.0",
+  "description": "azure real time face decection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grobinson4/Azure-Realtime-FACE-DETECTION.git"
+  },
+  "author": "Gary D. Robinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grobinson4/Azure-Realtime-FACE-DETECTION/issues"
+  },
+  "homepage": "https://github.com/grobinson4/Azure-Realtime-FACE-DETECTION#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsdom": "^16.4.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.0"
+  }
+}

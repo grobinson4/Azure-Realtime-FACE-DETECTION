@@ -1,0 +1,50 @@
+doctype html
+html
+    head
+        title Cashflow REST API Service
+        link(rel='stylesheet' type='text/css'  href='/bootstrap.css')
+        style(type="text/css").
+          html, body {
+            height: 100%;
+          }
+
+          .footer {
+            
+            align:center;
+          } 
+          .container {
+            height: 100%;
+          }
+
+    
+    body
+    nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+      a.navbar-brand(href='#') Developer
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarsExampleDefault' aria-controls='navbarsExampleDefault' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarsExampleDefault.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href='#')
+              | Docs 
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='#') Develop
+          li.nav-item
+            a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Disabled
+          li.nav-item.dropdown
+            a#dropdown01.nav-link.dropdown-toggle(href='#' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Dropdown
+            .dropdown-menu(aria-labelledby='dropdown01')
+              a.dropdown-item(href='#') Action
+              a.dropdown-item(href='#') Another action
+              a.dropdown-item(href='#') Something else here
+        form.form-inline.my-2.my-lg-0
+          p(style=" color: #FFFFFF") Welcome, #{name}!
+    .container
+        block content
+        br
+        
+        footer
+            p Copyright &copy; 2020
+    srcipt(src='bower_components/bootstrap/dist/jquery/dist/jquery.js')
+    srcipt(src='bower_components/bootstrap/dist/js/bootstrap.js')
